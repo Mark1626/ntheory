@@ -8,12 +8,7 @@ import (
 	"strconv"
 )
 
-type Pair struct {
-	x, y interface{}
-}
-
-func Handler(w http.ResponseWriter, r *http.Request) {
-
+func ExGcd(w http.ResponseWriter, r *http.Request) {
 	if err := r.ParseForm(); err != nil {
 		log.Printf("Error parsing form: %s", err)
 		return
